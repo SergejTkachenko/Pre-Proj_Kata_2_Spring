@@ -10,9 +10,9 @@ public class App {
         Cat cat1 = applicationContext.getBean("cat", Cat.class);
         Cat cat2 = applicationContext.getBean("cat", Cat.class);
 
-        System.out.println("Variables link to HelloWorld's objects the same? - " +
+        System.out.println("Do the variables refer to the same HelloWorld's object? - " +
                 (bean==bean1));
-        System.out.println("Variables link to Cat's objects the same? - " +
+        System.out.println("Do the variables refer to the same HelloWorld's object? - " +
                 (cat1==cat2));
 
         System.out.println(bean.getMessage());
